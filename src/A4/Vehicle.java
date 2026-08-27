@@ -15,6 +15,9 @@ public abstract class Vehicle {
         this.dailyRate = dailyRate;
     }
 
+    public void displayVehicleInfo(){
+        System.out.println("Make: ", "Model: " + "Year: " + "DailyRate: " + );
+    }
 
     // no methods then... ??
     //public abstract
@@ -26,8 +29,8 @@ public abstract class Vehicle {
     - specifically make, model, year, and dailyRate.
 
      This class should include a constructor that sets all four fields and a concrete method called displayVehicleInfo that prints them.
-Vehicle should not implement calculateRentalCost or getRentalTerms,
-
-    since those behaviors come from the Rentable interface and need to differ from one vehicle type to the next.
+Vehicle doesn't implement calculateRentalCost or getRentalTerms from the Rentable Interface
+- those behaviors come from the Rentable interface and need to differ from one vehicle type to the next.
 
  */
+

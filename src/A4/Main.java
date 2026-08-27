@@ -37,4 +37,8 @@ After the vehicle classes are done, students should write a Customer class that 
 Students should also write a RentalCompany class that stores a list of vehicles representing its fleet. This class needs a method called addVehicleToFleet, a method called displayFleet that prints information about every vehicle in the fleet, and a method called displayAllRentalTerms that prints the rental terms for every vehicle in the fleet. Because each vehicle type implements getRentalTerms differently, this last method is where students will see the same method call produce different results depending on the object's actual type.
 
 Finally, students should write a test class that builds a rental company, adds at least one car, one truck, and one motorcycle to the fleet, creates a customer, rents several vehicles to that customer, and prints out how much the customer has spent for a given number of rental days. As with the earlier assignments, every class and interface should be written in its own file.
+
+
+
+
  */
