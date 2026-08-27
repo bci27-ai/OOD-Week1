@@ -6,6 +6,7 @@ public class JazzPlaylist extends Playlist{
     ////Jazz array
     @Override
     public void playAllSongs() {
+        // play all Jazz songs
 
     }
 

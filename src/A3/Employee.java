@@ -1,11 +1,20 @@
 package A3;
 
-public class abstract Employee {
+public abstract class Employee {
 
-    //private name;
-    //private id;
+    private String name;
+    private int id;
 
     //FIXME
+    // public and private don't work here, check ehy later and adjust
+    // learning to spell 101
+
+
+    public Employee(String name ,int id){
+        this.name = name;
+        this.id = id;
+    }
+
 
     public void displayInfo(){
         System.out.print("The employees name is: " + "name" + "the id is: "+ "id");
