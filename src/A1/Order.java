@@ -20,7 +20,6 @@ public class Order {
         for(MenuItem m : menuItems){
             total += m.getPrice();
         }
-
     }
 
     public void displayOrderDetails(){
