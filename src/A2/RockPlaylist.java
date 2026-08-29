@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class RockPlaylist extends Playlist{
 
-    private ArrayList<Playlist> Rock;
+    private ArrayList<Playlist> Rock = new ArrayList<>();
     ////Rock array
     @Override
     public void playAllSongs() {

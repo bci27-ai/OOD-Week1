@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class PopPlaylist extends Playlist {
 
-    private ArrayList<Playlist> Pop;
+    private ArrayList<Playlist> Pop = new ArrayList<>();
         //pop array
     @Override
     public void playAllSongs() {

@@ -3,7 +3,7 @@ package A2;
 import java.util.ArrayList;
 
 public class JazzPlaylist extends Playlist{
-    private ArrayList<Playlist> Jazz;
+    private ArrayList<Playlist> Jazz = new ArrayList<>();
 
     ////Jazz array
     @Override

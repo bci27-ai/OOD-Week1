@@ -6,16 +6,16 @@ public abstract class Playlist {
 
     private String name;
     // list of sogs
-    ArrayList<Song> AllSongs;
+    ArrayList<Song> allSongs = new ArrayList<>();
 
 
     public void addSong(Song song){
-        AllSongs.add(song);
+        allSongs.add(song);
 
     }
 
     public void removeSong(Song song){
-        AllSongs.remove(song);
+        allSongs.remove(song);
 
     }
 

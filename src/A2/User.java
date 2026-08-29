@@ -5,8 +5,11 @@ import java.util.ArrayList;
 public class User {
 
     private String username;
-    private ArrayList playlistGroup;
+    private ArrayList playlistGroup = new ArrayList<>();
     // group of playlists etc
+    public User(String username ){
+        this.username = username;
+    }
 
     public void createPlaylist(String makePlaylist){
 
