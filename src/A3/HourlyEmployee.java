@@ -11,6 +11,7 @@ public class HourlyEmployee extends Employee implements Payable{
     }
 
 
+    // hours worked at the pay rate is returned
     @Override
     public double calculatePay() {
         return hoursWorked * payRate;

@@ -9,27 +9,28 @@ Payable has abstract methods that could be used in other ways then just for empl
 
 public class Test {
 
-    PayrollSystem paySys = new PayrollSystem();
-/*
-    Ce1.Employee(new ContractEmployee("Bob", 001));
-    Ce2.Employee( new ContractEmployee("Jerry", 002));
+    public static void main(String[] args){
+        PayrollSystem paySys = new PayrollSystem();
 
-    Ce1.displayInfo();
-    Ce2.displayInfo();
+        Employee Ce1 =(new ContractEmployee("Bob", 001));
+        Employee Ce2 =( new ContractEmployee("Jerry", 002));
 
-    He1.Employee = new HourlyEmployee();
-    He2.Employee = new HourlyEmployee();
+        Ce1.displayInfo();
+        Ce2.displayInfo();
 
-    He1.displayInfo();
-    He2.displayInfo();
+        Employee He1 = new HourlyEmployee("Greg", 003);
+        Employee He2 = new HourlyEmployee("James", 004);
 
-    Se1.Employee = new SalariedEmployee();
-    Se2.Employee = new SalariedEmployee();
+        He1.displayInfo();
+        He2.displayInfo();
 
-    Se1.displayInfo();
-    Se2.displayInfo();
+        Employee Se1 = new SalariedEmployee("Warthog", 005);
+        Employee Se2 = new SalariedEmployee("Assimilator", 006);
 
-*/
+        Se1.displayInfo();
+        Se2.displayInfo();
+    }
+
 }
 
 /*
