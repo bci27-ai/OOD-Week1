@@ -1,9 +1,6 @@
 package A2;
 
-import java.util.ArrayList;
-
 public class JazzPlaylist extends Playlist{
-    //private ArrayList<Playlist> Jazz = new ArrayList<>();
 
     public JazzPlaylist(String name) {
         super(name);

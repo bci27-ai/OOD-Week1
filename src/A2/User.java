@@ -11,8 +11,22 @@ public class User {
         this.username = username;
     }
 
-    public void createPlaylist(Song makePlaylist){
-        playlistGroup.add(Playlist);
+    public void createPlaylist(String type, String name){
+        Playlist p;
+
+        if(type.equalsIgnoreCase("pop")){
+           p = new PopPlaylist(name);
+        }
+        else if (type.equalsIgnoreCase("jazz")) {
+           p = new JazzPlaylist(name);
+        } else if (type.equalsIgnoreCase("Rock")) {
+            p = new RockPlaylist(name);
+        }
+        else {
+            System.out.println("Broken no laylist");
+        }
+// add exception or smt for 29
+        playlistGroup.add(p);
     }
     // array and list logic. ask list of lists ? array of three, or so or array list of arraylists?
     // like 2d array or something?

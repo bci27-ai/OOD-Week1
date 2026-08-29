@@ -1,10 +1,6 @@
 package A2;
 
-import java.util.ArrayList;
-
 public class PopPlaylist extends Playlist {
-
-    private ArrayList<Playlist> Pop = new ArrayList<>();
 
     public PopPlaylist(String name) {
         super(name);
@@ -14,8 +10,8 @@ public class PopPlaylist extends Playlist {
     @Override
     public void playAllSongs() {
         // play all Pop songs
-        for(Playlist p : Pop){
-            System.out.println("Now Playing: " + Pop);
+        for(Song s : allSongs){
+            System.out.println("Now Playing: " + allSongs);
         }
     }
 

@@ -14,6 +14,8 @@ public class Main {
         Song four = new Song("It made the Frogs Gay","Joe Rogan",2.46);
         Song five = new Song("HighWay to the DangerZone","AeroSmith",3.26);
 
+
+        //User.createPlaylist();
         //add all for speed:
         pop.addSong(three);
         pop.addSong(four);
