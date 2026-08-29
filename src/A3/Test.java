@@ -14,6 +14,9 @@ public class Test {
     /*Ce1.Employee(new ContractEmployee("Bob", 001));
     Ce2.Employee( new ContractEmployee("Jerry", 002));
 
+    Ce1.displayInfo();
+    Ce2.displayInfo();
+
     He1.Employee = new HourlyEmployee();
 
 */
