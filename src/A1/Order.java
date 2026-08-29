@@ -1,4 +1,6 @@
 package A1;
+/// one arrayList that zstores MenuItem binding- menuItems
+/// methods: Calculate total and display order details
 
 import java.util.ArrayList;
 
@@ -23,12 +25,10 @@ public class Order {
 
     public void displayOrderDetails(){
 
-        calculateTotal();
         for( MenuItem m : menuItems){
-            //total += m;
-
             System.out.println(menuItems);
         }
+        calculateTotal();
          //System.out.println("Print out the list here, along with the total amount." + calculateTotal());
     }
 
