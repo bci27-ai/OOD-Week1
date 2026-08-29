@@ -5,11 +5,11 @@ public abstract class Employee {
     private String name;
     private int id;
 
-    //FIXME
     // public and private don't work here, check ehy later and adjust
+    // not work because abs goes before class
     // learning to spell 101
 
-
+// constructor
     public Employee(String name ,int id){
         this.name = name;
         this.id = id;
@@ -17,7 +17,7 @@ public abstract class Employee {
 
 
     public void displayInfo(){
-        System.out.print("The employees name is: " + "name" + "the id is: "+ "id");
+        System.out.print("The employees name is: " + this.name + "name" + "the id is: "+ this.id);
     }
 
 }
