@@ -14,7 +14,7 @@ public class ContractEmployee extends Employee implements Payable{
 
     @Override
     public String getPayDetails() {
-        return "Employee: " + getName() + " is paid a flat fee per contract: $" + calculatePay();
+        return "Contract Employee: " + getName() + " is paid a flat fee per contract: $" + calculatePay();
     }
 }
 /*

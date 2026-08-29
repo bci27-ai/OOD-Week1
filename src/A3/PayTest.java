@@ -7,7 +7,7 @@ Payable has abstract methods that could be used in other ways then just for empl
 
  */
 
-public class Test {
+public class PayTest {
 
     public static void main(String[] args){
         PayrollSystem paySys = new PayrollSystem();
@@ -29,6 +29,17 @@ public class Test {
 
         Se1.displayInfo();
         Se2.displayInfo();
+/*
+        paySys.addEmployee((Payable) Ce1);
+        paySys.addEmployee((Payable) Ce2);
+        paySys.addEmployee((Payable) He1);
+        paySys.addEmployee((Payable) He2);
+        paySys.addEmployee((Payable) Se1);
+        paySys.addEmployee((Payable) Se2);
+*/
+        paySys.processPayroll();
+        paySys.totalPayrollCost();
+        paySys.payDetail();
     }
 
 }

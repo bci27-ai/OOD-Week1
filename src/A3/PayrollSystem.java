@@ -6,11 +6,15 @@ public class PayrollSystem {
 
     private ArrayList<Payable> emp;
 
+    // wasn't sure where to put this, so here it is:
+    public void addEmployee(Payable employee){
+        emp.add(employee);
+    }
+
+
     public void processPayroll(){
         for(Payable e : emp){
             e.getPayDetails();
-
-
         }
     }
 
@@ -20,6 +24,14 @@ public class PayrollSystem {
 
         }
     }
+
+    public void payDetail(){
+        for(Payable p : emp){
+            p.getPayDetails();
+
+        }
+    }
+
 }
 
 /*

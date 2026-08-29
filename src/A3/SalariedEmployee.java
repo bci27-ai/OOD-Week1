@@ -19,7 +19,7 @@ public class SalariedEmployee extends Employee implements Payable{
     @Override
     public String getPayDetails() {
 
-        return "Employee " + getName() + " is paid " + calculatePay();
+        return "Salaried Employee " + getName() + " is paid " + calculatePay();
     }
 
 
