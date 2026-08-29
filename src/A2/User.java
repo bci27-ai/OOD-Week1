@@ -19,7 +19,7 @@ public class User {
     // like 2d array or something?
 
     // this is in the
-    public void addSong(String song){
+    public void addSong(Song song){
         //ARRAYNAME  .add(song)
     }
     public void removeSong(String song){
