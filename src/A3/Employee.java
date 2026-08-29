@@ -1,5 +1,5 @@
 package A3;
-
+/// contains fields name and id as well as the display info method
 public abstract class Employee {
 
     private String name;
@@ -17,9 +17,12 @@ public abstract class Employee {
 
 
     public void displayInfo(){
-        System.out.print("The employees name is: " + this.name + "name" + "the id is: "+ this.id);
+        System.out.print("The employees name is: " + this.name +". "+ this.name + "the id is: "+ this.id);
     }
 
+    public String getName() {
+        return name;
+    }
 }
 
 /*

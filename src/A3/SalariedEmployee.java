@@ -7,12 +7,15 @@ public class SalariedEmployee extends Employee implements Payable{
 
     @Override
     public double calculatePay() {
-        return 0;
+        double salary = 99000;
+
+        return salary / 12;
     }
 
     @Override
     public String getPayDetails() {
-        return "";
+
+        return "Employee " + getName() + " is paid " + calculatePay();
     }
 
 

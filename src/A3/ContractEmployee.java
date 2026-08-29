@@ -7,12 +7,12 @@ public class ContractEmployee extends Employee implements Payable{
 
     @Override
     public double calculatePay() {
-        return 0;
+        return 1000;
     }
 
     @Override
     public String getPayDetails() {
-        return "";
+        return "Employee: " + getName() + " is paid a flat fee per contract: $" + calculatePay();
     }
 }
 /*

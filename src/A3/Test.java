@@ -11,9 +11,12 @@ public class Test {
 
     PayrollSystem paySys = new PayrollSystem();
 
-    paySys.add
+    /*Ce1.Employee(new ContractEmployee("Bob", 001));
+    Ce2.Employee( new ContractEmployee("Jerry", 002));
 
+    He1.Employee = new HourlyEmployee();
 
+*/
 }
 
 /*

@@ -14,7 +14,7 @@ public class Test {
         r.addVehicleToFleet(new Motorcycle("Virago", "MotoMake", 1998, 250));
 
         r.displayFleet();
-        //r.displayAllRentalTerms();
+        //r.displayAllRentalTerms(Vehicle( new Car("Tesla", "Y", 2016, 700)), "Suzuki", "TestCar");
 
         Customer c = new Customer("Jabba the Hut");
         //c.rentVehicle();
