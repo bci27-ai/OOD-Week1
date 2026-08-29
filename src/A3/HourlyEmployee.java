@@ -19,7 +19,7 @@ public class HourlyEmployee extends Employee implements Payable{
 
     @Override
     public String getPayDetails() {
-        return "Employee " + getName() + " is paid hourly: " + this.payRate + calculatePay();
+        return "Employee: " + getName() + " is paid hourly: " + this.payRate + calculatePay();
     }
 
 

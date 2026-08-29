@@ -29,6 +29,9 @@ public class Test {
 
         Se1.displayInfo();
         Se2.displayInfo();
+
+        paySys.processPayroll();
+        paySys.totalPayrollCost();
     }
 
 }

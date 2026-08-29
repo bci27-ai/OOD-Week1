@@ -9,8 +9,6 @@ public class PayrollSystem {
     public void processPayroll(){
         for(Payable e : emp){
             e.getPayDetails();
-
-
         }
     }
 

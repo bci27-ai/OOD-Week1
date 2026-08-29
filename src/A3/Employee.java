@@ -17,7 +17,7 @@ public abstract class Employee {
 
 
     public void displayInfo(){
-        System.out.print("The employees name is: " + this.name +". "+ this.name + "the id is: "+ this.id);
+        System.out.println("The employees name is: " + this.name + ". " + "the id is: "+ this.id);
     }
 
     public String getName() {
