@@ -1,15 +1,33 @@
 package A1;
 
+import java.util.ArrayList;
+
 public class Cafe {
 
+    private ArrayList <MenuItem> availableItems;
 
+    public void addMenuItem(MenuItem item){
+        menu.add(item);
+    }
+
+    public void placeOrder(MenuItem item){
+        Order.
+
+    }
+    // method using loop to print all menuItems
+
+    public void displayMenu(){
+       for(MenuItem m : menu){
+           System.out.println(menu);
+       }
+    }
 }
 
-
 /*
-Order class. Rather than storing items in three separate fields,
-    the Order class holds a list of MenuItem objects.
-write a method called addItem that adds a single MenuItem to that list,
-a method called calculateTotal that adds up the price of every item in the list, and
-a method called displayOrderDetails that prints each item in the order along with the total amount due.
+The third class is Cafe. Like Order, Cafe should store its available menu items in a list rather than in individual fields.
+
+Students should write
+    a method called addMenuItem that adds an item to the menu,
+    a method called placeOrder that accepts an Order and calculates its total,
+    a method called displayMenu that prints every item currently on the menu.
  */

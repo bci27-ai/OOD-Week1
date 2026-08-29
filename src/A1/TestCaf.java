@@ -9,7 +9,7 @@ public class TestCaf {
 /*
     test to break
 
-    methods: ?
+    methods:
     add item and price,
     print total
 

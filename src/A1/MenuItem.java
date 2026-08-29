@@ -1,5 +1,7 @@
 package A1;
-
+/// stores possible items on the menu,
+///contains a constructor with name, price, category
+/// contains method for displaying a manu tidemt object in readable format.
 public class MenuItem {
 
     private String name;
@@ -12,10 +14,10 @@ public class MenuItem {
         this.category = category;
     }
 
-    public void displayItemInfo(int item){
+    public void displayItemInfo(){
         // using a loop in the
-
-        System.out.println();
+        // never mind
+        System.out.println("Name: " + this.name + " Price: $" + this.price + " Category: " + this.category );
     }
 
     // getters
@@ -39,8 +41,6 @@ public class MenuItem {
     public void setCategory(String category){
         this.category = category;
     }
-
-
 }
 /*
 
@@ -55,9 +55,6 @@ Students should write a constructor that initializes all three fields,
 along with getter and setter methods for each one.
 They should also write a method called displayItemInfo that prints the item's details in a readable format.
 
-Finally, students should write a test class that creates a café, builds a menu, places an order, and prints the resulting bill.
-Each class, including the test class,
-    should live in its own .java file, to get used to organizing a program across multiple files
- */
+*/
 
 

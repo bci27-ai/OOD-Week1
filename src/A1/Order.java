@@ -1,32 +1,35 @@
 package A1;
-import java.lang.reflect.Array;
+
 import java.util.ArrayList;
 
 public class Order {
 
-    ArrayList<Order> MenuItem = MenuItem();
+    private ArrayList<MenuItem> menuItems;
 
-
-    public void addItem(){
+    public void addItem(MenuItem item){
         // add ONE item to a menu
+        menuItems.add(item);
 
     }
 
     public void calculateTotal(){
         // applies a change to the total based on total of array List
-
+        for(MenuItem m : menuItems){
+            m.calculateTotal();
+        }
     }
 
     public void displayOrderDetails(){
-         System.out.println("Print out the list here, along with the total amount." + calculateTotal());
+        double total = 0;
+        for( MenuItem m : menuItems){
+            //total += m;
 
+            System.out.println(menuItems);
+        }
+         //System.out.println("Print out the list here, along with the total amount." + calculateTotal());
     }
 
-
-
 }
-
-
 /*
 Order class. Rather than storing items in three separate fields,
     the Order class holds a list of MenuItem objects.
