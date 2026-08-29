@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class PayrollSystem {
 
-    private ArrayList<Payable> emp;
+    private ArrayList<Payable> emp = new ArrayList<>();
 
     // wasn't sure where to put this, so here it is:
     public void addEmployee(Payable employee){
@@ -14,24 +14,31 @@ public class PayrollSystem {
 
     public void processPayroll(){
         for(Payable e : emp){
-            e.getPayDetails();
+            //e.getPayDetails();
+            System.out.println(e.getPayDetails());
         }
     }
 
     public void totalPayrollCost(){
+        double total = 0;
         for(Payable p : emp){
-            p.calculatePay();
-
+            //p.calculatePay();
+            total += p.calculatePay();
+            System.out.println(p.calculatePay());
         }
+        System.out.println("Total Cost: " + total);
     }
-
+/*
     public void payDetail(){
         for(Payable p : emp){
-            p.getPayDetails();
+            //p.getPayDetails();
+            System.out.println(p.calculatePay());
 
         }
-    }
 
+
+    }
+*/
 }
 
 /*

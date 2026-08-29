@@ -12,34 +12,34 @@ public class PayTest {
     public static void main(String[] args){
         PayrollSystem paySys = new PayrollSystem();
 
-        Employee Ce1 =(new ContractEmployee("Bob", 001));
-        Employee Ce2 =( new ContractEmployee("Jerry", 002));
+        ContractEmployee Ce1 =(new ContractEmployee("Bob", 001));
+        ContractEmployee Ce2 =( new ContractEmployee("Jerry", 002));
 
         Ce1.displayInfo();
         Ce2.displayInfo();
 
-        Employee He1 = new HourlyEmployee("Greg", 003);
-        Employee He2 = new HourlyEmployee("James", 004);
+        HourlyEmployee He1 = new HourlyEmployee("Greg", 003);
+        HourlyEmployee He2 = new HourlyEmployee("James", 004);
 
         He1.displayInfo();
         He2.displayInfo();
 
-        Employee Se1 = new SalariedEmployee("Warthog", 005);
-        Employee Se2 = new SalariedEmployee("Assimilator", 006);
+        SalariedEmployee Se1 = new SalariedEmployee("Warthog", 005);
+        SalariedEmployee Se2 = new SalariedEmployee("Assimilator", 006);
 
         Se1.displayInfo();
         Se2.displayInfo();
-/*
-        paySys.addEmployee((Payable) Ce1);
-        paySys.addEmployee((Payable) Ce2);
-        paySys.addEmployee((Payable) He1);
-        paySys.addEmployee((Payable) He2);
-        paySys.addEmployee((Payable) Se1);
-        paySys.addEmployee((Payable) Se2);
-*/
+
+        paySys.addEmployee(Ce1);
+        paySys.addEmployee( Ce2);
+        paySys.addEmployee( He1);
+        paySys.addEmployee( He2);
+        paySys.addEmployee( Se1);
+        paySys.addEmployee( Se2);
+
         paySys.processPayroll();
         paySys.totalPayrollCost();
-        paySys.payDetail();
+        //paySys.payDetail();
     }
 
 }
