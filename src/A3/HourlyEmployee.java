@@ -1,4 +1,6 @@
 package A3;
+/// uses fields name and id
+/// implements abstract methods from Payable for Pay and pay details
 
 public class HourlyEmployee extends Employee implements Payable{
 

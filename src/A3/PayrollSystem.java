@@ -8,6 +8,7 @@ public class PayrollSystem {
 
     public void processPayroll(){
         for(Employee e : emp){
+            e.displayInfo();
 
 
         }
@@ -15,6 +16,7 @@ public class PayrollSystem {
 
     public void totalPayrollCost(){
         for(Employee p : emp){
+            p.
 
         }
     }
