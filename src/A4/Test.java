@@ -13,8 +13,13 @@ public class Test {
         r.addVehicleToFleet(new Truck("Suzuki", "10Ft", 2005, 700));
         r.addVehicleToFleet(new Motorcycle("Virago", "MotoMake", 1998, 250));
 
+        r.displayFleet();
+        //r.displayAllRentalTerms();
 
         Customer c = new Customer("Jabba the Hut");
+        c.rentVehicle();
+
+
 
         c.getTotalSpent(10);
 

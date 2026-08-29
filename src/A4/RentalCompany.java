@@ -8,7 +8,7 @@ public class RentalCompany {
 
     // creating a Vehicle list with vehicle as the type hoping to be able to fit all vehicle types easily.
 
-    ArrayList <Vehicle> Fleet = new ArrayList <> ();
+    private ArrayList <Vehicle> Fleet = new ArrayList <> ();
 
     public void addVehicleToFleet(Vehicle vehicle){
         Fleet.add(vehicle);
@@ -26,11 +26,15 @@ public class RentalCompany {
     // display terms for all vehicles in the fleet.
     // using the class as objects to display the terms directly instead of needing an object...
 
-    public void displayAllRentalTerms(Car c, Truck t, Motorcycle m){
+    public void displayAllRentalTerms( Car c, Truck t, Motorcycle m ){
         c.getRentalTerms();
         t.getRentalTerms();
         m.getRentalTerms();
 
+    }
+
+    public ArrayList<Vehicle> getFleet(){
+        return Fleet;
     }
 }
 
