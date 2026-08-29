@@ -4,9 +4,9 @@ public class Main {
 
     public static void main(String[] args){
 
-        PopPlaylist pop = new PopPlaylist();
-        JazzPlaylist jazz = new JazzPlaylist();
-        RockPlaylist rock = new RockPlaylist();
+        PopPlaylist pop = new PopPlaylist("Pop");
+        JazzPlaylist jazz = new JazzPlaylist("Jazz");
+        RockPlaylist rock = new RockPlaylist("Rock");
 
         Song one = new Song("99 -Red Baloons","Nina",2.56);
         Song two = new Song("Chicken Dance","Rooster",2.16);

@@ -5,28 +5,31 @@ import java.util.ArrayList;
 public class User {
 
     private String username;
-    private ArrayList playlistGroup = new ArrayList<>();
+    private ArrayList<Playlist> playlistGroup = new ArrayList<>();
     // group of playlists etc
     public User(String username ){
         this.username = username;
     }
 
-    public void createPlaylist(String makePlaylist){
-
-
+    public void createPlaylist(Song makePlaylist){
+        playlistGroup.add(Playlist);
     }
     // array and list logic. ask list of lists ? array of three, or so or array list of arraylists?
     // like 2d array or something?
 
     // this is in the
     public void addSong(Song song){
+        playlistGroup.add(song);
         //ARRAYNAME  .add(song)
     }
-    public void removeSong(String song){
+
+    public void removeSong(Song song){
+        playlistGroup.remove(song);
         // ARRAYNAME .remove(song)
     }
 
-    public void deletePlaylist(String playlist){
+    public void deletePlaylist(Song playlist){
+        playlistGroup.remove(Playlist);
         //ARRAYNAME .remove(playlist)
     }
 }

@@ -8,6 +8,10 @@ public abstract class Playlist {
     // list of sogs
     ArrayList<Song> allSongs = new ArrayList<>();
 
+    public Playlist(String name){
+        this.name = name;
+    }
+
 
     public void addSong(Song song){
         allSongs.add(song);
@@ -25,8 +29,9 @@ public abstract class Playlist {
     // String with short dec for style
 
 
-
-
+    public String getName() {
+        return name;
+    }
 }
 
 /*

@@ -3,14 +3,18 @@ package A2;
 import java.util.ArrayList;
 
 public class JazzPlaylist extends Playlist{
-    private ArrayList<Playlist> Jazz = new ArrayList<>();
+    //private ArrayList<Playlist> Jazz = new ArrayList<>();
+
+    public JazzPlaylist(String name) {
+        super(name);
+    }
 
     ////Jazz array
     @Override
     public void playAllSongs() {
         // play all Jazz songs
-        for(Playlist p : Jazz){
-            System.out.println("Now Playing: " + Jazz);
+        for(Song s : allSongs){
+            System.out.println("Now Playing: " + allSongs);
         }
     }
 

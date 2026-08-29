@@ -5,6 +5,11 @@ import java.util.ArrayList;
 public class RockPlaylist extends Playlist{
 
     private ArrayList<Playlist> Rock = new ArrayList<>();
+
+    public RockPlaylist(String name) {
+        super(name);
+    }
+
     ////Rock array
     @Override
     public void playAllSongs() {
