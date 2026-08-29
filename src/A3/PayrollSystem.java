@@ -4,19 +4,19 @@ import java.util.ArrayList;
 
 public class PayrollSystem {
 
-    private ArrayList<Employee> emp;
+    private ArrayList<Payable> emp;
 
     public void processPayroll(){
-        for(Employee e : emp){
-            e.displayInfo();
+        for(Payable e : emp){
+            e.getPayDetails();
 
 
         }
     }
 
     public void totalPayrollCost(){
-        for(Employee p : emp){
-            p.
+        for(Payable p : emp){
+            p.calculatePay();
 
         }
     }
