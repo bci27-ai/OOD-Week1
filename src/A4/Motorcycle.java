@@ -1,5 +1,10 @@
 package A4;
 
+/// contains vehicle related fields,
+/// super for vehicle fields in constructor.
+///
+/// overridden rental terms and cost calc for Motorcycle specifics
+
 public class Motorcycle extends Vehicle implements Rentable {
 
 
@@ -9,12 +14,14 @@ public class Motorcycle extends Vehicle implements Rentable {
 
     @Override
     public double calculateRentalCost(int days) {
-        return 0;
+        double insurance = 10.50;
+
+        return dailyRate * days + insurance;
     }
 
     @Override
     public String getRentalTerms() {
-        return "";
+        return "Motorcycle rentee pays for insurance, and a daily rate of: " + dailyRate + " per day";
     }
 
 }
@@ -28,6 +35,5 @@ motorcycle might charge a lower daily rate but add a mandatory insurance fee.
 Each subclass also needs its own version of getRentalTerms describing the conditions that apply to that vehicle type.
 
  */
-
 
 

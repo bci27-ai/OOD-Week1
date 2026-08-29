@@ -1,5 +1,10 @@
 package A4;
 
+/// contains vehicle related fields,
+/// super for vehicle fields in constructor.
+///
+/// overridden rental terms and cost calc for Truck specifics
+
 public class Truck extends Vehicle implements Rentable{
 
 
@@ -9,12 +14,14 @@ public class Truck extends Vehicle implements Rentable{
 
     @Override
     public double calculateRentalCost(int days) {
-        return 0;
+        double mileFee = 0.75;
+
+        return (days * dailyRate) * mileFee;
     }
 
     @Override
     public String getRentalTerms() {
-        return "";
+        return "Truck rentee pays a flat mile fee, and a daily rate of: " + dailyRate + " per day";
     }
 
 

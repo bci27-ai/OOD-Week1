@@ -1,4 +1,8 @@
 package A4;
+/// contains vehicle related fields,
+/// make, model, year, daily rate, w constructor.
+///
+/// One method for displaying those for the particular object
 
 public abstract class Vehicle {
 
@@ -16,11 +20,9 @@ public abstract class Vehicle {
     }
 
     public void displayVehicleInfo(){
-        System.out.println("Make: ", "Model: " + "Year: " + "DailyRate: " + );
+        System.out.println("Make: " + this.make + "Model: " + this.model + "Year: " + this.year + "DailyRate: " + this.dailyRate);
     }
 
-    // no methods then... ??
-    //public abstract
 }
 
 /*
