@@ -10,12 +10,10 @@ public class User {
 
     public void createPlaylist(String makePlaylist){
 
+
     }
-    //FIXME
     // array and list logic. ask list of lists ? array of three, or so or array list of arraylists?
     // like 2d array or something?
-
-    // oops this logice might be in wrong class
 
     // this is in the
     public void addSong(String song){
@@ -28,8 +26,6 @@ public class User {
     public void deletePlaylist(String playlist){
         //ARRAYNAME .remove(playlist)
     }
-
-
 }
 
 
