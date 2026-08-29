@@ -12,6 +12,8 @@ public class Motorcycle extends Vehicle implements Rentable {
         super(make, model, year, dailyRate);
     }
 
+    // rental calculation, and Terms in a string with the daily rate
+
     @Override
     public double calculateRentalCost(int days) {
         double insurance = 10.50;

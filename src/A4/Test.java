@@ -3,9 +3,29 @@ package A4;
 public class Test {
 
 
+    public static void main(String[] args) {
 
+        RentalCompany r = new RentalCompany();
+
+        //String make, String model, int year, double dailyRate
+
+        r.addVehicleToFleet(new Car("test Car", "Test Make", 2010, 500.00));
+        r.addVehicleToFleet(new Truck("Suzuki", "10Ft", 2005, 700));
+        r.addVehicleToFleet(new Motorcycle("Virago", "MotoMake", 1998, 250));
+
+
+        Customer c = new Customer("Jabba the Hut");
+
+        c.getTotalSpent(10);
+
+        // this is what id calla  lazy test. but even though its static it should work fine.
+
+
+
+        // specifically for testing
+        //Test.run();
+    }
 }
-
 /*
 write a test class that
     builds a rental company,

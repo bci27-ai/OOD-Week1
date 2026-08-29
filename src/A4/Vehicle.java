@@ -19,6 +19,8 @@ public abstract class Vehicle {
         this.dailyRate = dailyRate;
     }
 
+    // displaying current vehicle info
+
     public void displayVehicleInfo(){
         System.out.println("Make: " + this.make + "Model: " + this.model + "Year: " + this.year + "DailyRate: " + this.dailyRate);
     }
