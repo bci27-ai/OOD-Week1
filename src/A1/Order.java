@@ -13,14 +13,17 @@ public class Order {
     }
 
     public void calculateTotal(){
+        double total = 0;
         // applies a change to the total based on total of array List
         for(MenuItem m : menuItems){
-            m.calculateTotal();
+            total += m.getPrice();
         }
+
     }
 
     public void displayOrderDetails(){
-        double total = 0;
+
+        calculateTotal();
         for( MenuItem m : menuItems){
             //total += m;
 

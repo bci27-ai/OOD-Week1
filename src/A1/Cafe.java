@@ -4,14 +4,14 @@ import java.util.ArrayList;
 
 public class Cafe {
 
-    private ArrayList <MenuItem> availableItems;
+    private ArrayList <MenuItem> menu;
 
     public void addMenuItem(MenuItem item){
         menu.add(item);
     }
 
     public void placeOrder(MenuItem item){
-        Order.
+
 
     }
     // method using loop to print all menuItems
