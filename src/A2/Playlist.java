@@ -1,9 +1,13 @@
 package A2;
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 
 public abstract class Playlist {
 
     private String name;
     // list of sogs
+    ArrayList<Song> AllSongs
+
 
     public void addSong(){
 

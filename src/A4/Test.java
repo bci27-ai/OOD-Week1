@@ -17,7 +17,7 @@ public class Test {
         //r.displayAllRentalTerms();
 
         Customer c = new Customer("Jabba the Hut");
-        c.rentVehicle();
+        //c.rentVehicle();
 
 
 

@@ -1,18 +1,22 @@
 package A2;
 
+import java.util.ArrayList;
+
 public class PopPlaylist extends Playlist {
 
-    //private
+    private ArrayList<Playlist> Pop;
         //pop array
     @Override
     public void playAllSongs() {
         // play all Pop songs
-
+        for(Playlist p : Pop){
+            System.out.println("Now Playing: " + Pop);
+        }
     }
 
     @Override
     public String getVibe() {
-        return "";
+        return "Popping the rocks!";
     }
 }
 

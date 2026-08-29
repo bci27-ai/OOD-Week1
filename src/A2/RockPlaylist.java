@@ -1,17 +1,22 @@
 package A2;
 
+import java.util.ArrayList;
+
 public class RockPlaylist extends Playlist{
 
-
+    private ArrayList<Playlist> Rock;
     ////Rock array
     @Override
     public void playAllSongs() {
         // play all Rock songs
+        for(Playlist p : Rock){
+            System.out.println("Now Playing: " + Rock);
+        }
     }
 
     @Override
     public String getVibe() {
-        return "";
+        return "Rockin it out!";
     }
 }
 

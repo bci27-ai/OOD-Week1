@@ -2,13 +2,24 @@ package A4;
 
 public class Main {
 
-public static void main(String[] args){
+    public static void main(String[] args){
+        RentalCompany r = new RentalCompany();
+
+        //String make, String model, int year, double dailyRate
+        r.addVehicleToFleet(new Car("test Car", "CTest Make", 2010, 500.00));
+        r.addVehicleToFleet(new Truck("Suzuki", "11Ft", 2005, 700));
+        r.addVehicleToFleet(new Motorcycle("Virago", "BikeMake", 1998, 250));
+
+        r.displayFleet();
+        //r.displayAllRentalTerms();
+
+        Customer c = new Customer("Jabba the Hut");
+        //c.rentVehicle();
 
 
 
-}
-
-
+        c.getTotalSpent(10);
+    }
 }
 
 
