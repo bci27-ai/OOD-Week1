@@ -15,24 +15,24 @@ public class User {
         Playlist p;
 
         if(type.equalsIgnoreCase("pop")){
-           p = new PopPlaylist(name);
+            p = new PopPlaylist(name);
         }
         else if (type.equalsIgnoreCase("jazz")) {
-           p = new JazzPlaylist(name);
+            p = new JazzPlaylist(name);
         } else if (type.equalsIgnoreCase("Rock")) {
             p = new RockPlaylist(name);
         }
         else {
             System.out.println("Broken no laylist");
         }
-// add exception or smt for 29
-        playlistGroup.add(p);
+        // add exception or smt for 29
+        //playlistGroup.add(p);
     }
     // array and list logic. ask list of lists ? array of three, or so or array list of arraylists?
     // like 2d array or something?
 
     // this is in the
-    public void addSong(Song song){
+    public void addSong(Playlist song){
         playlistGroup.add(song);
         //ARRAYNAME  .add(song)
     }
@@ -42,8 +42,8 @@ public class User {
         // ARRAYNAME .remove(song)
     }
 
-    public void deletePlaylist(Song playlist){
-        playlistGroup.remove(Playlist);
+    public void deletePlaylist(Playlist playlist){
+        playlistGroup.remove(playlist);
         //ARRAYNAME .remove(playlist)
     }
 }
