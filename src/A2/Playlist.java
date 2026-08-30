@@ -5,8 +5,8 @@ import java.util.ArrayList;
 public abstract class Playlist {
 
     private String name;
-    // list of sogs
-    ArrayList<Song> allSongs = new ArrayList<>();
+    // list of sogs, private and public are not for this so prot works
+    protected ArrayList<Song> allSongs = new ArrayList<>();
 
     public Playlist(String name){
         this.name = name;
@@ -23,6 +23,7 @@ public abstract class Playlist {
 
     }
 
+    // based on the way i used it, it would have been better as a concrete with override.
     public abstract void playAllSongs();
 
     public abstract String getVibe();
@@ -32,6 +33,7 @@ public abstract class Playlist {
     public String getName() {
         return name;
     }
+
 }
 
 /*

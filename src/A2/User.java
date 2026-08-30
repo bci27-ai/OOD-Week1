@@ -23,7 +23,7 @@ public class User {
             p = new RockPlaylist(name);
         }
         else {
-            System.out.println("Broken no laylist");
+            System.out.println("Broken no playlist");
         }
         // add exception or smt for 29
         //playlistGroup.add(p);
@@ -34,16 +34,20 @@ public class User {
     // this is in the
     public void addSong(Playlist song){
         playlistGroup.add(song);
+        System.out.println(song + " added to " + Playlist.class);
         //ARRAYNAME  .add(song)
     }
 
     public void removeSong(Song song){
         playlistGroup.remove(song);
+
+        System.out.println(song + " removed from ");
         // ARRAYNAME .remove(song)
     }
 
     public void deletePlaylist(Playlist playlist){
         playlistGroup.remove(playlist);
+        System.out.println(playlist + " deleted. ");
         //ARRAYNAME .remove(playlist)
     }
 }

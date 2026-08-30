@@ -1,44 +1,55 @@
 package A2;
 
+import java.util.ArrayList;
+
 public class Main {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         PopPlaylist pop = new PopPlaylist("Pop");
         JazzPlaylist jazz = new JazzPlaylist("Jazz");
         RockPlaylist rock = new RockPlaylist("Rock");
 
-        Song one = new Song("99 -Red Baloons","Nina",2.56);
-        Song two = new Song("Chicken Dance","Rooster",2.16);
-        Song three = new Song("Oh Here she comes","George Michael",1.59);
-        Song four = new Song("It made the Frogs Gay","Joe Rogan",2.46);
-        Song five = new Song("HighWay to the DangerZone","AeroSmith",3.26);
+        ArrayList<Playlist> playlists = new ArrayList<>();
+        playlists.add(pop);
+        playlists.add(rock);
+        playlists.add(jazz);
 
+        Song one = new Song("99 -Red Balloons", "Nina", 2.56);
+        Song two = new Song("Chicken Dance", "Rooster", 2.16);
+        Song three = new Song("Oh Here she comes", "George Michael", 1.59);
+        Song four = new Song("It made the Frogs Gay", "Alex Jones", 2.46);
+        Song five = new Song("HighWay to the DangerZone", "AeroSmith", 3.26);
+        // five artist might actually be kenny logins or something
 
-        //User.createPlaylist();
-        //add all for speed:
         pop.addSong(three);
         pop.addSong(four);
 
         pop.addSong(one);
-        pop.getVibe();
         pop.playAllSongs();
         pop.removeSong(one);
 
         jazz.addSong(two);
-        jazz.getVibe();
         jazz.playAllSongs();
         jazz.removeSong(two);
 
         rock.addSong(five);
-        rock.getVibe();
         rock.playAllSongs();
         rock.removeSong(five);
 
+
+        // loop for each child class to do different behavior etc
+        for (Playlist p : playlists){
+            System.out.println(p.getVibe());
+            p.playAllSongs();
+            // loop through playlists
+        }
+
     }
 }
+        //User.createPlaylist();
 
-/*
+    /*
 
 
 Students should then write three subclasses:

@@ -9,9 +9,13 @@ public class PopPlaylist extends Playlist {
     //pop array
     @Override
     public void playAllSongs() {
+        System.out.println("Playing " + "Pop" + " playlist: ");
+
         // play all Pop songs
         for(Song s : allSongs){
-            System.out.println("Now Playing: " + allSongs);
+            System.out.println("Now Playing: " + s.getTitle() + " by "+ s.getArtist());
+            System.out.println(" Duration: " + s.getDuration());
+            System.out.println("---------- ----------");
         }
     }
 
