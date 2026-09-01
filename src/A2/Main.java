@@ -13,7 +13,7 @@ public class Main {
         ArrayList<Playlist> playlists = new ArrayList<>();
         playlists.add(pop);
         playlists.add(rock);
-        playlists.add(jazz);
+        playlists.add(jazz);// tounge
 
         Song one = new Song("99 -Red Balloons", "Nina", 2.56);
         Song two = new Song("Chicken Dance", "Rooster", 2.16);
